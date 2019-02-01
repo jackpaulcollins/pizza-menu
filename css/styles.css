@@ -3,5 +3,17 @@
 }
 
 .card h5 {
+  margin-top: 50px;
   text-align: center;
+}
+
+button {
+  margin-top: 25px;
+}
+
+.selectors{
+  margin-bottom: none;
+  margin-top: 25px;
+  font-style: italic;
+  font-weight: bold;
 }
