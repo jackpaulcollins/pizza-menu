@@ -20,12 +20,12 @@ input: Jack, "Large", "thin crust", "Extra cheese, pepperoni"
 
 Output: 
 
-Name: Jack
-Size: Thin crust
-Toppings: Extra cheese, Pepperoni
+      Name: Jack
+      Size: Thin crust
+      Toppings: Extra cheese, Pepperoni
 
-Cost: $16
-"Thanks for your order!""
+      Cost: $16
+      "Thanks for your order!""
 
 
 
