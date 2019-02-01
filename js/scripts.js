@@ -11,7 +11,6 @@ function pushToCheckout(customerPizza){
   var size = $("#customerSize")
   var dough = $("#customerDough")
   var toppings = $("#customerToppings")
-  var cost = $("#customerCost")
   name.html("<strong>Name: </strong>" + customerPizza.name);
   size.html("<strong>Size: </strong>" + customerPizza.size);
   dough.html("<strong>Dough: </strong>" + customerPizza.dough);
@@ -19,8 +18,11 @@ function pushToCheckout(customerPizza){
   }
 
 
-// function updateCost(customerPizza){
-//   cost.html("<strong>Cost: </strong>" + customer.toppings.length())}
+function updateCost(customerPizza){
+  var cost = $("#customerCost")
+  var finalCost = (parseInt(customerPizza.toppings.length))
+  cost.html("<strong>Cost: $</strong>" + (10 + finalCost))
+}
 
 
 
@@ -43,7 +45,7 @@ $(document).ready(function(event){
     console.log(dough)
     var customerPizza = new Pizza(name, size, dough, toppings)
     pushToCheckout(customerPizza)
-    // updateCost(customerPizza)
+    updateCost(customerPizza)
     event.preventDefault();
     })
 });
