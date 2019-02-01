@@ -18,13 +18,14 @@ Spec 4: The program thanks the user for their business.
 
 input: Jack, "Large", "thin crust", "Extra cheese, pepperoni"
 
-Output: Name: Jack
-        Size: Thin crust
-        Toppings: Extra cheese, Pepperoni
+Output: 
 
-        Cost: $16
+Name: Jack
+Size: Thin crust
+Toppings: Extra cheese, Pepperoni
 
-        "Thanks for your order!""
+Cost: $16
+"Thanks for your order!""
 
 
 
