@@ -46,7 +46,7 @@ $(document).ready(function(event){
       toppings.push($(this).val());
 });
   $("#mainForm").submit(function(event){
-    var name = $("#name").val();
+    var name = $("input#name").val();
     var size = $("#sizes option:selected").val();
     var dough = $("#doughs option:selected").val();
     console.log(dough)
