@@ -5,10 +5,11 @@
     <title>Jack's Pizza</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body background="imgs/pizza.jpg">
     <div class="container">
       <div class="jumbotron">
         <h1>Jack's Pizza</h1>
@@ -19,7 +20,7 @@
             <h5 class="card-title">Create your pizza!</h5>
             <div class="card-body">
               <form class="form-group" id='mainForm'>
-                <label for="name">Name?</label>
+                <label for="name" id="name">Name?</label>
                 <input type="text" class="form-control" id="name"></input>
                 <p class="selectors">Size:</p>
                 <select id="sizes">
@@ -53,6 +54,7 @@
               <p id="customerDough"><strong>Dough: </strong></p><br>
               <p id="customerToppings"><strong>Toppings: </strong></p><br>
               <p id="customerCost"><strong>Cost: </strong></p><br>
+              <h1 id="thanks">Thanks for your order!</h1>
             </div>
           </div>
         </div>

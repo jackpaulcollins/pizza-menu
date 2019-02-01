@@ -1,14 +1,27 @@
 body {
-  background: url("imgs/pizza.png") lightblue;
+  background-image: "img/pizza.jpg";
+  font-family: 'Quicksand', sans-serif;
 }
 
 .jumbotron h1 {
   text-align: center;
+  font-size: 7em;
+}
+
+.jumbotron {
+  background-color: yellow;
+  font-family: 'Amatic SC', cursive;
+  background-color: #fff26d
 }
 
 .card h5 {
   margin-top: 50px;
   text-align: center;
+}
+
+.card {
+  background-color: #fff26d;
+  width: 50%;
 }
 
 button {
@@ -20,4 +33,17 @@ button {
   margin-top: 25px;
   font-style: italic;
   font-weight: bold;
+}
+
+#name {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#thanks {
+  color: red;
+  font-size: 5em;
+  display: none;
+  text-align: center;
+  font-family: "comic";
 }

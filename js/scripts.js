@@ -1,3 +1,4 @@
+//front-end logic:
 
 function Pizza(name, size, dough, toppings){
   this.name = name
@@ -28,7 +29,7 @@ function updateCost(customerPizza){
 
 
 
-//back end
+//back end logic:
 
 $(document).ready(function(event){
   var toppings = [];
@@ -44,6 +45,7 @@ $(document).ready(function(event){
     var customerPizza = new Pizza(name, size, dough, toppings)
     pushToCheckout(customerPizza)
     updateCost(customerPizza)
+    $("#thanks").show();
     event.preventDefault();
     })
 });
