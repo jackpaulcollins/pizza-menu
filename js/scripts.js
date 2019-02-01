@@ -1,19 +1,9 @@
-//front end
-// pizza = {
-//   size: size,
-//   dough: dough,
-//   toppings: []
-// }
 
-
-
-
-
-
-
-
-
-
+function Pizza(name, size, dough, toppings){
+  this.name = name
+  this.size = size,
+  this.dough = dough
+}
 
 
 
@@ -22,10 +12,14 @@
 
 $(document).ready(function(event){
   $("#mainForm").submit(function(event){
+    var name = $("#name").val();
     var size = $("#sizes option:selected").val();
-    console.log(size)
     var dough = $("#doughs option:selected").val();
-    console.log(dough)
+    var toppings = $('form input:radio').val();
+    var customerPizza = new Pizza(name, size, dough, toppings)
+    console.log(customerPizza)
     event.preventDefault();
   });
+
+
 });
