@@ -28,8 +28,6 @@ function updateCost(customerPizza){
 
 
 
-
-
 //back end
 
 $(document).ready(function(event){
