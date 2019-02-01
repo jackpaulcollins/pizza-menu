@@ -22,7 +22,15 @@ function pushToCheckout(customerPizza){
 function updateCost(customerPizza){
   var cost = $("#customerCost")
   var finalCost = (parseInt(customerPizza.toppings.length))
-  cost.html("<strong>Cost: $</strong>" + (10 + finalCost))
+  if (customerPizza.size === "Small"){
+    sizeCost = 10
+  } else if (customerPizza.size === "Medium"){
+    sizeCost = 12
+  } else {
+    sizeCost = 14
+  }
+
+  cost.html("<strong>Cost: $</strong>" + (sizeCost + finalCost))
 }
 
 
@@ -47,5 +55,6 @@ $(document).ready(function(event){
     updateCost(customerPizza)
     $("#thanks").show();
     event.preventDefault();
+    console.log(customerPizza)
     })
 });
